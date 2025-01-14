@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean class="com.entity.Register" id="reg">
+		<property name="id" value="1"></property>
+		<property name="Name" value="priya"></property>
+		<property name="Email" value="priya@gmail.com"></property>
+		<property name="Password" value="priya@123"></property>
+		<property name="city" value="pune"></property>
+		<property name="Mobile_no" value="99323221"></property>
+		<property name="Adhar_no" value="123456789123"></property>
+		<property name="login" ref="login"></property>
+
+
+
+	</bean>
+	<bean class="com.entity.Login" id="login">
+		<property name="Email" value="priya@gmail.com"></property>
+		<property name="Password" value="priya@123"></property>
+
+	</bean>
+</beans>
